@@ -1,4 +1,4 @@
-// Wedding Card Designs Data
+
 const cardDesigns = [
     { id: 1, name: "Snow White Classic", image: "https://placehold.co/400x300/f0f4f8/2c3e66?text=Snow+White+Classic", description: "Elegant white and gold design" },
     { id: 2, name: "Royal Blue", image: "https://placehold.co/400x300/2c3e66/ffffff?text=Royal+Blue", description: "Deep blue with golden accents" },
@@ -8,7 +8,7 @@ const cardDesigns = [
     { id: 6, name: "Floral Bliss", image: "https://placehold.co/400x300/e8d5c4/2c3e66?text=Floral+Bliss", description: "Beautiful floral patterns" }
 ];
 
-// Load Gallery
+
 function loadGallery() {
     const galleryGrid = document.getElementById('galleryGrid');
     if (!galleryGrid) return;
@@ -27,7 +27,7 @@ function loadGallery() {
     `).join('');
 }
 
-// Smooth scrolling for navigation
+
 function initSmoothScroll() {
     document.querySelectorAll('.nav-links a, .btn-primary[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -43,7 +43,7 @@ function initSmoothScroll() {
     });
 }
 
-// Initialize everything
+
 document.addEventListener('DOMContentLoaded', () => {
     loadGallery();
     initSmoothScroll();
